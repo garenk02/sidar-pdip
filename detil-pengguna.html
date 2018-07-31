@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Detil Data Pengguna | SIDAR</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Sweet Alert Css -->
+    <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="#">Sistem Informasi Data Anggota Relawan - PDIP</a>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+                    <div class="email">admin@example.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="material-icons">person</i>Profil</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="index.html">
+                                    <i class="material-icons">input</i>Keluar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">NAVIGASI</li>
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                            <span>Dasbor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="list-relawan.html">
+                            <i class="material-icons">view_list</i>
+                            <span>Data Relawan</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="list-pengguna.html">
+                            <i class="material-icons">supervised_user_circle</i>
+                            <span>Data Pengguna</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">assignment_return</i>
+                            <span>Keluar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018
+                    <a href="javascript:void(0);">SIDAR - PDIP</a>
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Basic Validation -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Detil Data Pengguna</h2>
+                        </div>
+                        <div class="body">
+                            <form id="form_validation" method="POST" autocomplete="off">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="id_pengguna" value="garrett_winters" required>
+                                        <label class="form-label">ID Pengguna</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email" value="garrett_winters@example.com" required>
+                                        <label class="form-label">Email</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="name" value="Relawan 1" required>
+                                        <label class="form-label">Nama Lengkap</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="pekerjaan" value="Jakarta" required>
+                                        <label class="form-label">Kota</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label class="form-label">Status</label>
+                                        <br>
+                                        <br>
+                                        <input type="radio" name="status" id="aktif" class="with-gap" checked>
+                                        <label for="aktif">Aktif</label>
+                                        <input type="radio" name="status" id="nonaktif" class="with-gap">
+                                        <label for="nonaktif" class="m-l-20">Nonaktif</label>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary waves-effect" type="submit">Simpan</button>
+                                <a href="list-pengguna.html" class="btn btn-success waves-effect float-right">Kembali</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Basic Validation -->
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Jquery Validation Plugin Css -->
+    <script src="plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- JQuery Steps Plugin Js -->
+    <script src="plugins/jquery-steps/jquery.steps.js"></script>
+
+    <!-- Sweet Alert Plugin Js -->
+    <script src="plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Autosize Plugin Js -->
+    <script src="plugins/autosize/autosize.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/forms/form-validation.js"></script>
+    <script src="js/pages/forms/basic-form-elements.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
