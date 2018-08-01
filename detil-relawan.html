@@ -64,9 +64,8 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="#">Sistem Informasi Data Anggota Relawan - PDIP</a>
+                <a class="navbar-brand" href="dashboard.html">Sistem Informasi Data Anggota Relawan - PDIP</a>
             </div>
         </div>
     </nav>
@@ -104,7 +103,7 @@
                 <ul class="list">
                     <li class="header">NAVIGASI</li>
                     <li>
-                        <a href="index.html">
+                        <a href="dashboard.html">
                             <i class="material-icons">home</i>
                             <span>Dasbor</span>
                         </a>
@@ -203,7 +202,7 @@
                                     <div class="form-line">
                                         <label class="form-label">Propinsi</label>
                                         <br>
-                                        <select class="form-control show-tick" name="agama">
+                                        <select class="form-control show-tick" name="propinsi" data-live-search="true">
                                             <option>Banten</option>
                                             <option selected>DKI Jakarta</option>
                                             <option>Jawa Barat</option>
@@ -218,7 +217,7 @@
                                     <div class="form-line">
                                         <label class="form-label">Kabupaten/Kota</label>
                                         <br>
-                                        <select class="form-control show-tick" name="agama">
+                                        <select class="form-control show-tick" name="kabupaten" data-live-search="true">
                                             <option>Kota Tangerang</option>
                                             <option>Kab. Tangerang</option>
                                             <option>Kota Serang</option>
@@ -240,7 +239,7 @@
                                     <div class="form-line">
                                         <label class="form-label">Kecamatan</label>
                                         <br>
-                                        <select class="form-control show-tick" name="agama">
+                                        <select class="form-control show-tick" name="kecamatan" data-live-search="true">
                                             <option selected>Cengkareng</option>
                                             <option>Tambora</option>
                                             <option>Grogol Petamburan</option>
@@ -253,7 +252,7 @@
                                     <div class="form-line">
                                         <label class="form-label">Kelurahan</label>
                                         <br>
-                                        <select class="form-control show-tick" name="agama">
+                                        <select class="form-control show-tick" name="kelurahan" data-live-search="true">
                                             <option selected>Cengkareng</option>
                                             <option>Tomang</option>
                                             <option>Pasar Minggu</option>
@@ -266,7 +265,7 @@
                                     <div class="form-line">
                                         <label class="form-label">Agama</label>
                                         <br>
-                                        <select class="form-control show-tick" name="agama">
+                                        <select class="form-control show-tick" name="agama" data-live-search="true">
                                             <option selected>Islam</option>
                                             <option>Kristen</option>
                                             <option>Katolik</option>
@@ -274,6 +273,7 @@
                                             <option>Budha</option>
                                             <option>Kong Hu Chu</option>
                                             <option>Kepercayaan</option>
+                                            <option>Lain-lain</option>
                                         </select>
                                     </div>
                                 </div>
@@ -283,11 +283,11 @@
                                         <br>
                                         <br>
                                         <input type="radio" name="status_sosial" id="lajang" class="with-gap" checked>
-                                        <label for="lajang">Lajang</label>
+                                        <label for="lajang" class="m-l-0">Lajang</label>
                                         <input type="radio" name="status_sosial" id="menikah" class="with-gap">
-                                        <label for="menikah" class="m-l-20">Menikah</label>
+                                        <label for="menikah" class="m-l-5">Menikah</label>
                                         <input type="radio" name="status_sosial" id="duda_janda" class="with-gap">
-                                        <label for="duda_janda" class="m-l-20">Duda/Janda</label>
+                                        <label for="duda_janda" class="m-l-5">Duda/Janda</label>
                                     </div>
                                 </div>
                                 <div class="form-group form-float">
@@ -298,7 +298,13 @@
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="email" class="form-control" name="email" value="relawan@example.com" required>
+                                        <input type="text" class="form-control" name="telpon" value="081236123718">
+                                        <label class="form-label">Telpon/Hp</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email" value="relawan@example.com">
                                         <label class="form-label">Email</label>
                                     </div>
                                 </div>
